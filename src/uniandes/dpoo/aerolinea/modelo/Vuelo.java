@@ -94,6 +94,8 @@ public class Vuelo
 			 Tiquete tiquete = GeneradorTiquetes.generarTiquete(this, cliente, tarifa);
 			 this.tiquetes.put(tiquete.getCodigo(), tiquete);
 			 
+			 cliente.agregarTiquete(tiquete);
+			 
 			 valorTotal += tarifa;
 		 }
 		 

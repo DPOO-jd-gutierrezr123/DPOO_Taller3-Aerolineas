@@ -11,6 +11,11 @@ public class ClienteNatural extends Cliente
 	 * El nombre del cliente
 	 */
 	private String nombre;
+	
+	/**
+	 * El identificador del cliente
+	 */
+	private String identificador;
 
 	/**
 	 * Construye un nuevo cliente natural dado su nombre
@@ -18,6 +23,7 @@ public class ClienteNatural extends Cliente
 	public ClienteNatural(String nombre) {
 		super();
 		this.nombre = nombre;
+		this.identificador = NATURAL + nombre;
 	}
 
 	@Override
@@ -27,7 +33,7 @@ public class ClienteNatural extends Cliente
 
 	@Override
 	public String getIdentificador() {
-		return null;
+		return identificador;
 	}
 
 }

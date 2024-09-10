@@ -12,6 +12,11 @@ public class ClienteCorporativo extends Cliente
 	 */
     static String CORPORATIVO = "Corporativo";
     
+	/**
+	 * El identificador del cliente
+	 */
+	private String identificador;
+    
     /**
      * La constante utilizada para indicar que la empresa es grande
      */
@@ -44,6 +49,7 @@ public class ClienteCorporativo extends Cliente
     	super();
 		this.nombreEmpresa = nombreEmpresa;
 		this.tamanoEmpresa = tamanoEmpresa;
+		this.identificador = CORPORATIVO + nombreEmpresa;
 	}
 
     /**
@@ -71,7 +77,7 @@ public class ClienteCorporativo extends Cliente
 	@Override
 	public String getIdentificador() 
 	{
-		return null;
+		return identificador;
 	}
 
 	/**

@@ -17,12 +17,12 @@ public abstract class Cliente
 	/**
 	 * La lista de tiquetes sin usar del cliente
 	 */
-	private List<Tiquete> tiquetesSinUsar;
+	public List<Tiquete> tiquetesSinUsar;
 	
 	/**
 	 * La lista de tiquetes usados del cliente
 	 */
-	private List<Tiquete> tiquetesUsados;
+	public List<Tiquete> tiquetesUsados;
 	
 	/**
 	 * Inicializa las listas de tiquetes del cliente
